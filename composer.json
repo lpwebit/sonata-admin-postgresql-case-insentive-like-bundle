@@ -1,0 +1,25 @@
+{
+    "name": "lpweb/sonata-admin-postgresql-case-insentive-like-bundle",
+    "description": "This Symfony bundle provides the ability to make insentive LIKE search on SonataAdmin with PostgreSQL database",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lorenzo Pezzali",
+            "email": "lorenzo.pezzali@lpweb.it"
+        }
+    ],
+    "type": "symfony-bundle",
+    "require": {
+        "php": ">=7.4",
+        "symfony/framework-bundle": ">=3.4",
+        "doctrine/doctrine-bundle": ">=2.4",
+        "sonata-project/admin-bundle": "~3.9",
+        "sonata-project/doctrine-orm-admin-bundle": "~3.1"
+    },
+    "minimum-stability": "stable",
+    "target-dir": "Lpweb/SonataAdminPostgreSQLCaseInsensitiveLikeBundle",
+    "autoload": {
+        "psr-0": { "Lpweb\\SonataAdminPostgreSQLCaseInsensitiveLikeBundle": "" }
+    }
+
+}
