@@ -4,18 +4,16 @@ It makes all search **case insensitive**.
 
 ## Install
 
-Register the bundle to your `app/AppKernel.php`
+Register the bundle to your `config/bundles.php`
 
 ```php
+<?php
+
+return [
     // ...
-    public function registerBundles()
-    {
-        $bundles = [
-            // ...
-            new Lpweb\SonataAdminPostgreSQLCaseInsensitiveLikeBundle\LpwebSonataAdminPostgreSQLCaseInsensitiveLikeBundle(),
-        ];
-        // ...
-    }
+    Lpweb\SonataAdminPostgreSQLCaseInsensitiveLikeBundle\LpwebSonataAdminPostgreSQLCaseInsensitiveLikeBundle::class => ['all' => true],
+    // ...
+];
 ```
 
 Now all the CONTAINS search in you sonata admin will be made case insensitive
